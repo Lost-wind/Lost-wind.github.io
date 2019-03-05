@@ -5,17 +5,17 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="title:HelloWorld Flask学习(01)1.创建工程文件夹microblog2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）3.在__init__.py中导入flask，并创建实例 test_app.from flask import Flasktest_app = Flask(__name">
+  <meta name="description" content="HelloWorld Flask学习(01) 1.创建工程文件夹microblog2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）3.在__init__.py中导入flask，并创建实例 test_app.from flask import Flasktest_app = Flask(__name__) #">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://yoursite.com/2019/03/05/HelloWorld Flask应用/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="title:HelloWorld Flask学习(01)1.创建工程文件夹microblog2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）3.在__init__.py中导入flask，并创建实例 test_app.from flask import Flasktest_app = Flask(__name">
+<meta property="og:description" content="HelloWorld Flask学习(01) 1.创建工程文件夹microblog2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）3.在__init__.py中导入flask，并创建实例 test_app.from flask import Flasktest_app = Flask(__name__) #">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-03-05T15:41:51.057Z">
+<meta property="og:updated_time" content="2019-03-05T15:44:35.199Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
-<meta name="twitter:description" content="title:HelloWorld Flask学习(01)1.创建工程文件夹microblog2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）3.在__init__.py中导入flask，并创建实例 test_app.from flask import Flasktest_app = Flask(__name">
+<meta name="twitter:description" content="HelloWorld Flask学习(01) 1.创建工程文件夹microblog2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）3.在__init__.py中导入flask，并创建实例 test_app.from flask import Flasktest_app = Flask(__name__) #">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -83,7 +83,8 @@
         <!-- Table of Contents -->
         
         <hr>
-<h2 id="title-HelloWorld-Flask学习-01"><a href="#title-HelloWorld-Flask学习-01" class="headerlink" title="title:HelloWorld Flask学习(01)"></a>title:HelloWorld Flask学习(01)</h2><p>1.创建工程文件夹microblog<br>2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）<br>3.在__init__.py中导入flask，并创建实例 test_app.<br>from flask import Flask<br>test_app = Flask(__name__) # __name__指向正在调用它的模块的名字（后面章节才会涉及）<br>from app import routes</p>
+<h1 id="HelloWorld-Flask学习-01"><a href="#HelloWorld-Flask学习-01" class="headerlink" title="HelloWorld Flask学习(01)"></a>HelloWorld Flask学习(01)</h1><hr>
+<p>1.创建工程文件夹microblog<br>2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）<br>3.在__init__.py中导入flask，并创建实例 test_app.<br>from flask import Flask<br>test_app = Flask(__name__) # __name__指向正在调用它的模块的名字（后面章节才会涉及）<br>from app import routes</p>
 <p>4.在app文件夹下创建routes.py脚本.路由是应用程序实现的不同URL。在Flask中，应用程序路由的处理程序被编写为Python函数，称为视图函数。视图函数映射到一个或多个路由URL，以便Flask知道客户端请求给定URL时要执行的逻辑。<br>from app import test_app<br>@test_app.route(‘/‘)    # 实例的路由属性<br>def index():<br>    return ‘test!!!’</p>
 <pre><code>首先就导入了test_app 实例，由此可推知为什么from app import routes写在最后
 </code></pre><p>5.在microblog文件夹下创建microblog.py，输入<br>from app import test_app</p>
@@ -147,7 +148,7 @@
   
     <a href="/2019/03/01/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">下一篇</strong>
-      <div class="article-nav-title">Welcome!</div>
+      <div class="article-nav-title"></div>
     </a>
   
 </nav>
@@ -183,7 +184,7 @@
       
         <strong class="toc-title">文章目录</strong>
         <div class="toc-widget-list">
-              <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#title-HelloWorld-Flask学习-01"><span class="toc-number">1.</span> <span class="toc-text">title:HelloWorld Flask学习(01)</span></a></li></ol>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HelloWorld-Flask学习-01"><span class="toc-number">1.</span> <span class="toc-text">HelloWorld Flask学习(01)</span></a></li></ol>
           </div>
       </div>
     </div>

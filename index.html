@@ -81,7 +81,8 @@
         <!-- Table of Contents -->
         
         <hr>
-<h2 id="title-HelloWorld-Flask学习-01"><a href="#title-HelloWorld-Flask学习-01" class="headerlink" title="title:HelloWorld Flask学习(01)"></a>title:HelloWorld Flask学习(01)</h2><p>1.创建工程文件夹microblog<br>2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）<br>3.在__init__.py中导入flask，并创建实例 test_app.<br>from flask import Flask<br>test_app = Flask(__name__) # __name__指向正在调用它的模块的名字（后面章节才会涉及）<br>from app import routes</p>
+<h1 id="HelloWorld-Flask学习-01"><a href="#HelloWorld-Flask学习-01" class="headerlink" title="HelloWorld Flask学习(01)"></a>HelloWorld Flask学习(01)</h1><hr>
+<p>1.创建工程文件夹microblog<br>2.创建module（也称 包）文件夹app，并在其中创建 __init__.py脚本。一般把包含此脚本的文件夹称作 modeule/包）<br>3.在__init__.py中导入flask，并创建实例 test_app.<br>from flask import Flask<br>test_app = Flask(__name__) # __name__指向正在调用它的模块的名字（后面章节才会涉及）<br>from app import routes</p>
 <p>4.在app文件夹下创建routes.py脚本.路由是应用程序实现的不同URL。在Flask中，应用程序路由的处理程序被编写为Python函数，称为视图函数。视图函数映射到一个或多个路由URL，以便Flask知道客户端请求给定URL时要执行的逻辑。<br>from app import test_app<br>@test_app.route(‘/‘)    # 实例的路由属性<br>def index():<br>    return ‘test!!!’</p>
 <pre><code>首先就导入了test_app 实例，由此可推知为什么from app import routes写在最后
 </code></pre><p>5.在microblog文件夹下创建microblog.py，输入<br>from app import test_app</p>
@@ -112,30 +113,11 @@
   <div class="article-inner">
     
     
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/01/hello-world/">Welcome!</a>
-    </h1>
-  
-
-      </header>
-    
     <div class="article-entry" itemprop="articleBody">
       
         <!-- Table of Contents -->
         
-        <p>Welcome to <a href="https://lostwind.cf" target="_blank" rel="noopener">lostwind</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
+        
       
     </div>
     <footer class="article-footer">
@@ -197,7 +179,7 @@
           </li>
         
           <li>
-            <a href="/2019/03/01/hello-world/">Welcome!</a>
+            <a href="/2019/03/01/hello-world/">(no title)</a>
           </li>
         
       </ul>

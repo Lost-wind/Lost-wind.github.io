@@ -66,6 +66,42 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-HelloWorld Flask应用" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/03/05/HelloWorld Flask应用/" class="article-date">
+  <time datetime="2019-03-05T15:24:23.356Z" itemprop="datePublished">2019-03-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <!-- Table of Contents -->
+        
+        <p>1.创建工程文件夹microblog<br>2.创建module（也称 包）文件夹app，并在其中创建 <strong>init</strong>.py脚本。一般把包含此脚本的文件夹称作 modeule/包）<br>3.在<strong>init</strong>.py中导入flask，并创建实例 test_app.<br>from flask import Flask<br>test_app = Flask(<strong>name</strong>) # <strong>name</strong>指向正在调用它的模块的名字（？？？）<br>from app import routes</p>
+<p>4.在app文件夹下创建routes.py脚本.路由是应用程序实现的不同URL。在Flask中，应用程序路由的处理程序被编写为Python函数，称为视图函数。视图函数映射到一个或多个路由URL，以便Flask知道客户端请求给定URL时要执行的逻辑。<br>from app import test_app</p>
+<h1 id="实例的路由属性"><a href="#实例的路由属性" class="headerlink" title="实例的路由属性"></a>实例的路由属性</h1><p>@test_app.route(‘/‘)<br>def index():<br>    return ‘test!!!’</p>
+<pre><code>首先就导入了test_app 实例，由此可推知为什么from app import routes写在最后
+</code></pre><p>5.在microblog文件夹下创建microblog.py，输入<br>from app import test_app</p>
+<p>6.进入命令行，进入虚拟环境，进入microblog文件夹，输入<br>set FLASK_APP = microblog.py<br>flask run </p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2019/03/05/HelloWorld Flask应用/" data-id="cjsvxen5s0000s0xbfmw19fx1" class="article-share-link">分享</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+ 
+
+
+  
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2019/03/01/hello-world/" class="article-date">
@@ -80,7 +116,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2019/03/01/hello-world/">Welcome！</a>
+      <a class="article-title" href="/2019/03/01/hello-world/">Welcome!</a>
     </h1>
   
 
@@ -157,7 +193,11 @@
       <ul>
         
           <li>
-            <a href="/2019/03/01/hello-world/">Welcome！</a>
+            <a href="/2019/03/05/HelloWorld Flask应用/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2019/03/01/hello-world/">Welcome!</a>
           </li>
         
       </ul>
@@ -169,7 +209,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title archive">归档</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/03/">March 2019</a><span class="archive-list-count">2</span></li></ul>
     </div>
   </div>
 
